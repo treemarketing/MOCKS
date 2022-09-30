@@ -132,7 +132,7 @@ router.get("/", (req, res) => {
 
 
 //TEST MOCKS
-router.get('/test', async (req, res) => {
+router.get('/-test', async (req, res) => {
     const products = new ProductsFake()
    try {
        res.json(await products.generarFakeProducts())
